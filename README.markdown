@@ -6,4 +6,4 @@ This pdf provides a detailed guide to playing around with the Facebook API.
 
 One thing that needs to be changed within the context of this FriendBC exercise is:
 
-Instead of running `irb` from the Command Line to experiment, use `rails console` instead.
+Instead of running `irb` from the Command Line to start up your sandbox, use `rails console` instead.
