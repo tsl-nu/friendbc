@@ -1,6 +1,6 @@
 ## A Guide To Experimenting With The Graph API:
 
-## http://cspp52553.com/facebook-api.pdf
+## https://github.com/tsl-sxsw/friendbc/raw/master/public/facebook-api.pdf
 
 This pdf provides a detailed guide to playing around with the Facebook API.
 
