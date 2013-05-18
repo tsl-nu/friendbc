@@ -1,0 +1,29 @@
+<% require 'open-uri' %>
+
+<% url = "https://graph.facebook.com/me/home?limit=200&access_token=CAACEdEose0cBANnrTb6yzNRaNQteLmOVbwVKAjhJgZBDHdv0Ana11aK9Lv8W3qZBVPeFTdgIN3Mty1SonUbjS5xJXqrVhAirs17IzE6QuZCb8rlOvnpaY2iIPFmwLyShqXDnBwsQctXGZAb2pZAZBZBp730w92ZBcsAEIZASg4Y9ipwZDZD" %>
+
+<% r = JSON.parse(open(url).read) %>
+
+<% posts = r["data"] %>
+
+<ul>
+<% posts.each do |post| %>
+  <% if post["type"] == "video" %>
+  <li>
+    <p>
+      <%= post["from"]["name"] %>:
+      <%= post["message"] %>
+    </p>
+    <p><a target="_blank" href="<%= post["link"] %>">Click to watch</a></p>
+  </li>
+  <% end %>
+<% end %>
+</ul>
+
+
+
+
+
+
+
+
